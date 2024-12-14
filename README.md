@@ -5,7 +5,7 @@
 
 
 > ## 📑 Descrição
-Este repositório contém uma demonstração prática de como implementar a integração entre Java e um banco de dados relacional MySQL utilizando JDBC (Java Database Connectivity) com a biblioteca MySQL Connector e o padrão DAO (Data Access Object). Este projeto foi desenvolvido para fins de aprendizagem, tendo experiência em acessar o banco de dados com Java e fazendo operações básicas (CRUD) dentro do código, seguindo boas práticas. Utilizando as entidades Departament e Seller, com suas interfaces com padrão DAO e suas operações.
+Este repositório contém uma demonstração prática de como implementar a integração entre Java e um banco de dados relacional MySQL utilizando JDBC (Java Database Connectivity) com a biblioteca MySQL Connector e o padrão DAO (Data Access Object). Este projeto foi desenvolvido para fins de aprendizagem, tendo experiência em acessar o banco de dados com Java e fazendo operações básicas (CRUD) dentro do código, seguindo boas práticas. Utilizando as entidades Department e Seller, com suas interfaces com padrão DAO e suas operações.
 
 
 > ## 💎 Características Principais:
