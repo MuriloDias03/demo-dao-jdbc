@@ -14,6 +14,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        // Program para fazer os testes CRUD do objeto Seller
         SellerDao sellerDao = DaoFactory.createSellerDao();
 
         System.out.println("===== TEST 1: seller findById =====");
@@ -44,7 +45,7 @@ public class Program {
         sellerDao.update(seller);
         System.out.println("Updated completed!");
 
-        System.out.println("\n===== TEST 5: seller delete =====");
+        System.out.println("\n===== TEST 6: seller delete =====");
         System.out.print("Enter id for delete test: ");
         int id = sc.nextInt();
         sellerDao.deleteById(id);
