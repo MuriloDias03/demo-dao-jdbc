@@ -37,7 +37,10 @@ public class Program2 {
         System.out.println("Updated completed!");
 
         System.out.println("\n===== TEST 5: department delete =====");
-
+        System.out.print("Enter id for delete test: ");
+        int id = sc.nextInt();
+        departmentDaoDao.deleteById(id);
+        System.out.println("Deleted completed!");
 
         sc.close();
     }

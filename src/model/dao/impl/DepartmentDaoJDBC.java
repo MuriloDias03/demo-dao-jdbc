@@ -4,13 +4,10 @@ import db.DB;
 import db.DbException;
 import model.dao.DepartmentDao;
 import model.entities.Department;
-import model.entities.Seller;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class DepartmentDaoJDBC implements DepartmentDao {
 
@@ -77,7 +74,22 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 
     @Override
     public void deleteById(Integer id) {
-        
+        PreparedStatement st = null;
+        try {
+            st = conn.prepareStatement("DELETE FROM department WHERE Id = ?");
+            st.setInt(1, id);
+
+            int rowAffected = st.executeUpdate();
+            if (rowAffected == 0) {
+                throw new DbException("Delete failed, id not found");
+            }
+        }
+        catch (SQLException e) {
+            throw new DbException(e.getMessage());
+        }
+        finally {
+            DB.closeStatement(st);
+        }
     }
 
     @Override

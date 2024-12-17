@@ -9,7 +9,7 @@ Este repositório contém uma demonstração prática de como implementar a inte
 
 
 > ## 💎 Características Principais:
-**Status:** em desenvolvimento.  
+**Status:** concluído.  
 **Conexão com o Banco de Dados:** Exemplo de como configurar a conexão usando o JDBC.  
 **Organização com DAO:** Implementação do padrão DAO para separar a lógica de acesso ao banco de dados da lógica de negócios.  
 **CRUD Completo:** Métodos para criação, leitura, atualização e exclusão (CRUD) de dados.  
