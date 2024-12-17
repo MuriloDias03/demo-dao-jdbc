@@ -15,7 +15,8 @@ public class Program2 {
         DepartmentDao departmentDaoDao = DaoFactory.createDepartmentDao();
 
         System.out.println("===== TEST 1: department findById =====");
-
+        Department department = departmentDaoDao.findById(7);
+        System.out.println(department);
 
         System.out.println("\n===== TEST 2: department findAll =====");
 
@@ -26,7 +27,10 @@ public class Program2 {
         System.out.println("Inserted! New id = " + newDepartment.getId());
 
         System.out.println("\n===== TEST 4: department update =====");
-
+        department = departmentDaoDao.findById(1);
+        department.setName("Collectibles");
+        departmentDaoDao.update(department);
+        System.out.println("Updated completed!");
 
         System.out.println("\n===== TEST 5: department delete =====");
 
